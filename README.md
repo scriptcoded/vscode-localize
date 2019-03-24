@@ -1,6 +1,6 @@
-# nuxt-i18n-vs-code README
+# vscode-localize README
 
-This is the README for your extension "nuxt-i18n-vs-code". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "vscode-localize". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 

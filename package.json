@@ -1,6 +1,6 @@
 {
-	"name": "nuxt-i18n-vs-code",
-	"displayName": "Nuxt i18n VS Code",
+	"name": "vscode-localize",
+	"displayName": "VS Code Localize",
 	"description": "",
 	"version": "0.0.1",
 	"engines": {
@@ -26,14 +26,14 @@
 			}
 		],
 		"configuration": {
-			"title": "Nuxt i18n configuration",
+			"title": "Localize configuration",
 			"properties": {
-				"nuxti18n.localesDirectory": {
+				"localize.localesDirectory": {
 					"type": "string",
 					"default": "lang",
 					"description": "Directory that will be used to read localization files."
 				},
-				"nuxti18n.defaultLocale": {
+				"localize.defaultLocale": {
 					"type": "string",
 					"default": "en-US",
 					"description": "Default locale to load when VS Code starts."
@@ -41,8 +41,8 @@
 			}
 		},
 		"commands": [{
-			"command": "nuxti18n.switchLocale",
-			"title": "Switch Nuxt i18n locale"
+			"command": "localize.switchLocale",
+			"title": "Switch Localize locale"
 		}]
 	},
 	"scripts": {

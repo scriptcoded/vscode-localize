@@ -16,7 +16,7 @@ import {
 } from './interfaces';
 
 export function activate(context: ExtensionContext) {
-	console.log('Nuxt i18n VS Code activated');
+	console.log('VS Code Localize activated');
 
 	registerCommands(context);
 	
@@ -47,7 +47,7 @@ export function activate(context: ExtensionContext) {
   context.subscriptions.push(codeLensProviderDisposable);
 
 	function loadConfiguration () {
-		config = workspace.getConfiguration('nuxti18n');
+		config = workspace.getConfiguration('localize');
 		const configDefaultLocale: string | undefined = config.get('defaultLocale');
 
 		if (!configDefaultLocale) {
@@ -259,7 +259,7 @@ export function activate(context: ExtensionContext) {
 
 	loadLocalizations();
 	
-	context.subscriptions.push(commands.registerCommand('nuxti18n.switchLocale', async () => {
+	context.subscriptions.push(commands.registerCommand('localize.switchLocale', async () => {
 		let selectedLocale = await switchLocale(loadedLocales);
 
 		if (!selectedLocale) {
